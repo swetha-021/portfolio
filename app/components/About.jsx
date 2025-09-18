@@ -29,13 +29,7 @@ const About = () => {
         whileInView={{opacity:1}}
         transition={{duration:0.8}}  
         >
-            <motion.div className='w-80 sm:w-96 rounded-3xl max-w-none'
-            initial={{opacity:0, scale:0.9}}
-            whileInView={{opacity:1, scale:1}}
-            transition={{duration:0.6}}
-            >
-                <Image src={assets.swetha} alt='user' className="w-full rounded-3xl" />
-            </motion.div>
+           
             
             
             <motion.div 
@@ -54,7 +48,7 @@ const About = () => {
                 transition={{duration:0.8, delay:1}}
                 >
                     {infoList.map(({icon,iconDark,title,description},index)=>(
-                        <motion.li  key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#5A5F4A] hover:-translate-y-1 duration-500 hover:shadow-black'
+                        <motion.li  key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#CC8358] hover:-translate-y-1 duration-500 hover:shadow-black'
                         whileHover={{scale: 1.05}}
                         >
                             <Image className='w-7 mt-3' src={icon} alt={title}/>
@@ -87,6 +81,15 @@ const About = () => {
                     ))}
                 </motion.ul>
             </motion.div>
+
+            <motion.div className='w-80 sm:w-120 rounded-3xl max-w-none  -mt-10 -mr-22'
+            initial={{opacity:0, scale:0.9}}
+            whileInView={{opacity:1, scale:1}}
+            transition={{duration:0.6}}
+            >
+                <Image src={assets.swetha} alt='user' className="w-full rounded-3xl h-[500px] w-[700px]" />
+            </motion.div>
+
         </motion.div>
     
     

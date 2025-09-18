@@ -33,7 +33,7 @@ const Contact = () => {
 
 
   return (
-    // <div className='bg-[#EAE1D2]'>
+    <div className='bg-[#EAE1D2]'>
 <motion.div
     initial={{opacity:0}}
     whileInView={{opacity:1}}
@@ -102,7 +102,7 @@ const Contact = () => {
       </motion.form>
 
     </motion.div>
-    // </div>
+    </div>
     
   )
 }

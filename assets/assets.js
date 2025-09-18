@@ -42,7 +42,7 @@ import optum from './optum-icon.jpeg'
 import bing from './Bing-icon.jpeg'
 import linkedin from './linkedin_icon.png'
 import github from './github-icon.png'
-import swetha from './swe-img2.png'
+import swetha from './swetha1.png'
 
 export const assets = {
     user_image,

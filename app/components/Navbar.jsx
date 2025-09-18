@@ -35,7 +35,7 @@ const Navbar = () => {
         </a>
 
         
-        <ul className={`hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : " bg-[#5A5F4A] shadow-sm bg-opacity-50 text-gray-100"}` }>
+        <ul className={`hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : " bg-[#CC8358] text-black shadow-sm bg-opacity-50 "}` }>
             <li><a className="font-Ovo" href="#top">Home</a></li>
             <li><a className="font-Ovo" href="#about">About me</a></li>
             <li><a className="font-Ovo" href="#experience">Experience</a></li>   
@@ -45,7 +45,11 @@ const Navbar = () => {
 
         <div className='flex items-center gap-4'>
             
-            <a href="#contact" className='hidden lg:flex item-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo'>Contact <Image src={assets.arrow_icon} alt="" className='w-4 h-4 mt-1'/></a>
+            {/* <a href="#contact" className='hidden lg:flex item-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo bg-[#CC8358]'> <Image src={assets.arrow_icon} alt="" className='w-4 h-4 mt-1'/></a> */}
+
+            <a href="https://www.linkedin.com/in/swethaprakash21/" target="_blank">
+  <Image src={assets.arrow_icon} alt="contact me" className='w-25 h-14' />
+</a>
 
             <button className='block md:hidden ml-3' onClick={openMenu}>
                 <Image src={assets.menu_black} alt='' className='w-6' />
