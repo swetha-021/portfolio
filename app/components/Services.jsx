@@ -29,8 +29,8 @@ const Services = () => {
         initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{duration:0.5, delay:0.7}}
-        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus cum odit veritatis distinctio voluptatem necessitatibus pariatur quaerat libero ipsam reprehenderit incidunt, ut dicta. Quas quod officia optio, quisquam quis, est repellat mollitia asperiores esse temporibus provident in fuga nulla?
+        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-xl'>
+            From building apps to teaching code, I’ve loved turning ideas into working projects while learning something new every step of the way!
         </motion.p>
 
         <motion.div 
@@ -38,16 +38,16 @@ const Services = () => {
         whileInView={{opacity:1}}
         transition={{duration:0.6, delay:0.9}}
         
-        className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10'>
+        className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-20'>
             {experienceData.map(({icon,title,position,location}, index)=>(
                 <motion.div
                 whileHover={{scale:1.05}}
                 
-                key={index} className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-[#CC8358] hover:-translate-y-1 duration-500'>
+                key={index} className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-gradient-to-b hover:from-[#CC8358] hover:to-[#EAE1D2]  hover:-translate-y-1 duration-500'>
                     <Image  src={icon} alt='' className='w-10'/>
-                    <h3 className='text-lf my-4 text-gray-700'>{title}</h3>
-                    <h3 className='text-lf my-4 text-gray-700'>{position}</h3>
-                    <p className='text-sm text-gray-600 leading-5'>{location}</p>
+                    <h3 className='text-lf my-4 text-black'>{title}</h3>
+                    <h3 className='text-lf my-4 text-gray-800'>{position}</h3>
+                    <p className='text-sm text-gray-700 leading-5'>{location}</p>
                     {/* <p className='text-sm text-gray-600 leading-5'>{description}</p> */}
                     
                 </motion.div>

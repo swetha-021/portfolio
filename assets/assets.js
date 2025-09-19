@@ -94,23 +94,23 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Chef Claude',
+        description: 'React app using an AI API to generate creative recipes',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'ToDo List',
+        description: 'A task management app built with PHP and Laravel',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Tenzies',
+        description: 'A fun dice-rolling game made with React and JavaScript',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Hangman',
+        description: 'A classic Hangman word game built with JavaScript.',
         bgImage: '/work-4.png',
     },
 ]

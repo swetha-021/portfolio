@@ -11,12 +11,6 @@ const About = () => {
     whileInView={{opacity:1}}
     transition={{duration:1}}
     >
-        {/* <motion.h4 className='text-center mb-2 text-lg font-Ovo'
-        initial={{y: -20, opacity:0}}
-        whileInView={{y:0,opacity:1}}
-        transition={{duration:0.5, delay:0.3}}
-        >Introduction</motion.h4> */}
-        
         
         <motion.h2 className='text-center mb-2 text-5xl font-Ovo'
         initial={{y: -20, opacity:0}}
@@ -29,9 +23,7 @@ const About = () => {
         whileInView={{opacity:1}}
         transition={{duration:0.8}}  
         >
-           
-            
-            
+
             <motion.div 
             initial={{opacity:0}}
             whileInView={{opacity:1}}
@@ -39,8 +31,8 @@ const About = () => {
             
             
             className='flex-1'>
-                <p className='mb-10 max-w-4xl font-Ovo'
-                >I build full-stack solutions that feel simple to use and strong at their core. Along the way, I’m continuing to discover new areas of tech that inspire me and shape the kind of developer I’m becoming. I’m driven by curiosity, creativity, and the belief that great work happens when ideas are shared and built together!</p>
+                <p className='mb-15 max-w-4xl font-Ovo text-xl'
+                >I build reliable and user-friendly full-stack solutions. My work is fueled by curiosity and a passion for creating innovative, collaborative technologies. I'm always exploring new areas in tech to grow as a developer!</p>
             
                 <motion.ul className='grid grid-cols-1 sm:grid-cols-3 gap-6'
                 initial={{opacity:0}}
@@ -48,7 +40,7 @@ const About = () => {
                 transition={{duration:0.8, delay:1}}
                 >
                     {infoList.map(({icon,iconDark,title,description},index)=>(
-                        <motion.li  key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#CC8358] hover:-translate-y-1 duration-500 hover:shadow-black'
+                        <motion.li  key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-gradient-to-b hover:from-[#CC8358] hover:to-[#EAE1D2] hover:-translate-y-1 duration-500 hover:shadow-black'
                         whileHover={{scale: 1.05}}
                         >
                             <Image className='w-7 mt-3' src={icon} alt={title}/>
@@ -82,7 +74,7 @@ const About = () => {
                 </motion.ul>
             </motion.div>
 
-            <motion.div className='w-80 sm:w-120 rounded-3xl max-w-none  -mt-10 -mr-22'
+            <motion.div className='w-80 sm:w-120 rounded-3xl max-w-none  -mt-10 -mr-22 hidden lg:block'
             initial={{opacity:0, scale:0.9}}
             whileInView={{opacity:1, scale:1}}
             transition={{duration:0.6}}

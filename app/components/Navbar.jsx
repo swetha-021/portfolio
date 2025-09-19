@@ -26,12 +26,10 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
-        <Image src={assets.header_bg_color} alt="" className='w-full'/>
-    </div>
+  
     <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll? " bg-opacity-50 backdrop-blur-lg shadow-sm":""}`}>
         <a href="#top">
-            <Image src = {assets.logo} alt="" className=' w-28 cursor-pointer mr-14'/>                
+            <Image src = {assets.logo} alt="" className=' w-28 cursor-pointer '/>                
         </a>
 
         
@@ -44,12 +42,10 @@ const Navbar = () => {
         </ul>
 
         <div className='flex items-center gap-4'>
-            
-            {/* <a href="#contact" className='hidden lg:flex item-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo bg-[#CC8358]'> <Image src={assets.arrow_icon} alt="" className='w-4 h-4 mt-1'/></a> */}
 
             <a href="https://www.linkedin.com/in/swethaprakash21/" target="_blank">
-  <Image src={assets.arrow_icon} alt="contact me" className='w-25 h-14' />
-</a>
+                <Image src={assets.arrow_icon} alt="contact me" className='w-25 h-14' />
+            </a>
 
             <button className='block md:hidden ml-3' onClick={openMenu}>
                 <Image src={assets.menu_black} alt='' className='w-6' />
